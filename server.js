@@ -12,7 +12,11 @@ app.use(express.json());
 
 // Connect to MongoDB
 mongoose.connect(process.env.MONGO_URI, {
-    connectTimeoutMS: 30000, // Extend connection timeout
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+    serverSelectionTimeoutMS: 30000,  // Timeout di selezione del server
+    socketTimeoutMS: 45000,           // Timeout del socket
+    connectTimeoutMS: 30000   
 }).then(() => {
     console.log('Connected to MongoDB');
 }).catch((error) => {
