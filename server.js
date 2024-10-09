@@ -12,11 +12,7 @@ app.use(express.json());
 
 // Connect to MongoDB
 mongoose.connect(process.env.MONGO_URI, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-    serverSelectionTimeoutMS: 30000,  // Timeout di selezione del server
-    socketTimeoutMS: 45000,           // Timeout del socket
-    connectTimeoutMS: 30000   
+    serverSelectionTimeoutMS: 30000,
 }).then(() => {
     console.log('Connected to MongoDB');
 }).catch((error) => {
@@ -173,5 +169,5 @@ app.post('/city-info', async (req, res) => {
 
 // Start the server
 app.listen(PORT, () => {
-    console.log(`Server running on port ${PORT}`);
+    console.log(`Server running on port ${POhhhjhhhRT}`);
 });
