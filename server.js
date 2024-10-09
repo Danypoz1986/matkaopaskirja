@@ -54,7 +54,7 @@ const citySchema = new mongoose.Schema({
     }]
 });
 
-const City = mongoose.model('City', citySchema, 'Mok_data');
+const City = mongoose.model('City', citySchema, 'Kaupungit');
 
 // Route to fetch city info
 app.post('/city-info', async (req, res) => {
