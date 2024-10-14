@@ -7,7 +7,7 @@ import './App.css';
 
 const App = () => {
   const [cityName, setCityName] = useState('');
-  const [favoriteCityName, setFavoriteCityName] = useState(''); 
+  const [favoriteCityName, setFavoriteCityName] = useState('');
   const [cityData, setCityData] = useState(null);
   const [error, setError] = useState('');
 
@@ -28,9 +28,19 @@ const App = () => {
       <Typography variant="h4" align="center" gutterBottom>
         City Information
       </Typography>
-      <Typography variant="h6" align="center" color='red' gutterBottom>
+      <Typography variant="h6" align="center" color="red" gutterBottom>
         Unlocking Urban Insights
       </Typography>
+
+      {/* Add the Login/Register links */}
+      <Box display="flex" justifyContent="flex-end" mb={2}>
+        <Link to="/login">
+          <Button color="primary">Login</Button>
+        </Link>
+        <Link to="/register">
+          <Button color="primary">Register</Button>
+        </Link>
+      </Box>
 
       <AddFavorite cityName={favoriteCityName} setCityName={setFavoriteCityName} />
 
@@ -40,7 +50,7 @@ const App = () => {
           fullWidth
           label="Search"
           value={cityName}
-          onChange={(e) => setCityName(e.target.value)} 
+          onChange={(e) => setCityName(e.target.value)}
           className="textField"
         />
         <Button type="submit" variant="contained" color="primary" className="button">
