@@ -42,8 +42,19 @@ const App = () => {
         </Link>
       </Box>
 
+      {/* "Add Favorite" component goes above the search results */}
       <AddFavorite cityName={favoriteCityName} setCityName={setFavoriteCityName} />
 
+      {/* Ensure the "View Favorites" button is above the search results */}
+      <Box mt={2} display="flex" justifyContent="end">
+        <Link to="/favorites">
+          <Button variant="contained" color="secondary">
+            View Favorites
+          </Button>
+        </Link>
+      </Box>
+
+      {/* Search form and results */}
       <Box component="form" onSubmit={handleSearchSubmit} className="form">
         <TextField
           variant="outlined"
@@ -117,12 +128,6 @@ const App = () => {
             </Box>
           </Paper>
         )}
-      </Box>
-
-      <Box mt={2} display="flex" justifyContent="center">
-        <Link to="/favorites">
-          <Button variant="contained" color="secondary">View Favorites</Button>
-        </Link>
       </Box>
     </Container>
   );

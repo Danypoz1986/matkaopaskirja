@@ -31,9 +31,18 @@ const SearchPage = () => {
         Unlocking Urban Insights
       </Typography>
 
+      {/* Add Favorite component remains above the search results */}
       <AddFavorite cityName={favoriteCityName} setCityName={setFavoriteCityName} />
 
-      <Box component="form" onSubmit={handleSearchSubmit} className="form">
+      {/* "View Favorites" button fixed above the search results */}
+      <Box mt={2} display="flex" justifyContent="end">
+        <Button variant="contained" color="secondary" href="/favorites">
+          View Favorites
+        </Button>
+      </Box>
+
+      {/* Search form */}
+      <Box component="form" onSubmit={handleSearchSubmit} className="form" mt={2}>
         <TextField
           variant="outlined"
           fullWidth
@@ -49,6 +58,7 @@ const SearchPage = () => {
 
       {error && <Alert severity="error" className="alert">{error}</Alert>}
 
+      {/* City data display */}
       <Box flexGrow={1} mb={2}>
         {cityData && (
           <Paper elevation={3} className="infoContainer">
@@ -106,12 +116,6 @@ const SearchPage = () => {
             </Box>
           </Paper>
         )}
-      </Box>
-
-      <Box mt={2} display="flex" justifyContent="center">
-        <Button variant="contained" color="secondary" href="/favorites">
-          View Favorites
-        </Button>
       </Box>
     </Container>
   );
