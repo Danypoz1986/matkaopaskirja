@@ -35,7 +35,7 @@ const SearchPage = () => {
       <AddFavorite cityName={favoriteCityName} setCityName={setFavoriteCityName} />
 
       {/* "View Favorites" button fixed above the search results */}
-      <Box mt={2} display="flex" justifyContent="end">
+      <Box mt={2} mb={2} display="flex" justifyContent="center">
         <Button variant="contained" color="secondary" href="/favorites">
           View Favorites
         </Button>

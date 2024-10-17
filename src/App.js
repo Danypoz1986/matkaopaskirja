@@ -46,7 +46,7 @@ const App = () => {
       <AddFavorite cityName={favoriteCityName} setCityName={setFavoriteCityName} />
 
       {/* Ensure the "View Favorites" button is above the search results */}
-      <Box mt={2} display="flex" justifyContent="end">
+      <Box mt={2} mb={2} display="flex" justifyContent="center">
         <Link to="/favorites">
           <Button variant="contained" color="secondary">
             View Favorites

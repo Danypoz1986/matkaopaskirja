@@ -47,19 +47,6 @@
   padding: 5px 0;
 }
 
-.css-1fbc142 {
-  margin-top: 16px;
-  margin-bottom: 16px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-  -ms-flex-pack: end;
-  -webkit-justify-content: end;
-  justify-content: end;
-}
-
 @media (max-width: 600px) {
   .container {
     padding: 10px;

@@ -15,10 +15,13 @@ const LoginPage = () => {
     setError('');
     try {
       const response = await axios.post('http://localhost:5000/login', { email, password });
+  
+      const token = response.data.token;
+      // Store the token in localStorage
+      localStorage.setItem('token', token); // Storing the JWT token
       setSuccessMessage('Login successful!');
-      console.log('Login success:', response.data);
-
-      // Redirect to the SearchPage after successful login
+      
+      // Redirect to the search page after successful login
       navigate('/search');
     } catch (err) {
       setError('Login failed. Please try again.');
