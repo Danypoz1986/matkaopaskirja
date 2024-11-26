@@ -76,6 +76,7 @@
 @media (orientation: landscape) and (max-width: 1080px) {
     body, html {
         overflow: auto !important; /* Enable scrolling in landscape mode */
+        min-height: 100% !important;
     }
 
     .header {
