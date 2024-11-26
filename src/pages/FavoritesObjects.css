@@ -1,0 +1,19 @@
+.container {
+  color: black; /* Black text color */
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1rem; /* Basic padding */
+}
+
+h1, h2 {
+  color: black; /* Black text color */
+}
+
+.list-group-item {
+  padding: 0.3rem 0.8rem; /* Adjust padding to make the list items more compact */
+  margin-bottom: 0; /* Keep the margin at zero */
+}
+
+.btn-secondary{
+  max-width: 200px;
+}

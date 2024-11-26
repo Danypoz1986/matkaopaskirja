@@ -1,0 +1,147 @@
+#auth-body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden !important; /* Prevent body scroll by default */
+    height: 100%;
+    width: 100%;
+    background-color: #f0f0f0;
+}
+
+.header {
+    display: flex;
+    align-items: center; /* Centers items vertically */
+    justify-content: center; /* Centers the container horizontally */
+    background-color: #F5E3C2; /* Soft Beige */
+    border-bottom: 4px solid #00C3FF; /* Muted Teal */
+    position: relative; /* Keeps the header fixed at the top */
+    padding: 20px;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Ensure header is above other elements */
+    box-sizing: border-box;
+}
+
+.auth-page {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align the container at the top */
+    height: calc(100vh-80px); /* Adjust height to account for the header */
+    overflow: auto; /* Enable scrolling if needed */
+    background-color: #f0f0f0;
+    padding-top: 20px; /* Add some padding above the content */
+    box-sizing: border-box;
+}
+
+.auth-container {
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center children horizontally */
+    justify-content: center;
+    width: 100%; /* Full width of the page */
+    max-width: 400px; /* Constrain the container width */
+    margin: 0 auto; /* Center horizontally */
+    background-color: transparent; /* Make the background transparent */
+    padding: 20px; /* Padding inside the container */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: none; /* Remove shadow if causing extra border */
+}
+
+/* Adjustments for register and login positions */
+#register {
+    margin-top: 50px;
+}
+
+#login {
+    margin-top: 30px;
+}
+
+/* Portrait mode adjustments */
+@media (max-width: 768px) {
+    .auth-page {
+        overflow: hidden !important; /* Prevent scrolling in portrait mode */
+    }
+
+    #register, #login {
+        margin-top: 20px; /* Ensure spacing for small screens */
+    }
+
+    #log {
+        padding-bottom: 0px;
+    }
+
+}
+
+/* Landscape mode adjustments */
+@media (orientation: landscape) and (max-width: 1080px) {
+    body, html {
+        overflow: auto !important; /* Enable scrolling in landscape mode */
+    }
+
+    .header {
+        position: relative !important;
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+    }
+
+    .auth-page {
+        padding-top: calc(20px + 4px + 20px);
+        padding-bottom: 40px; /* Keep consistent spacing at the bottom of the page */
+    }
+
+    .auth-container {
+        margin-bottom: 80px; /* Add space at the bottom of the container */
+    }
+
+    #register, #login {
+        margin-top: -10px; /* Ensure spacing for small screens */
+    }
+}
+
+.auth-box {
+    background-color: white; /* Keep the inner box white */
+    padding: 40px; /* Adjust padding */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect for the inner box */
+    text-align: center;
+    width: 300px; /* Fixed width */
+    margin: 0; /* Ensure no extra margin around this box */
+}
+
+.auth-box form {
+    display: flex;
+    flex-direction: column;
+}
+
+.auth-box input {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.auth-button {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.auth-button:hover {
+    background-color: #0056b3;
+}
+
+.error-message {
+    color: red;
+    margin-top: 10px;
+}
+
+.link {
+    color: #007bff;
+    cursor: pointer;
+}
+
+.link:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,136 @@
+body, html {
+  height: 100%;
+  width: 100%;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+/* Header Styling for Large Screens */
+@media(min-width: 1000px) {
+  #header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F5E3C2;
+    padding: 20px;
+    border-bottom: 4px solid #00C3FF;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
+
+/* Header Styling for Smaller Screens */
+@media(max-width: 999px) {
+  #header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F5E3C2;
+    padding: 20px;
+    border-bottom: 4px solid #00C3FF;
+    position: relative;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
+
+/* Page Container Styling */
+.page-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: calc(100vh - 80px); /* Account for header height */
+  padding-top: 20px;
+  padding-bottom: 20px;
+  box-sizing: border-box;
+  width: 100%;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+}
+
+/* Center Column Styling */
+.center-column {
+  background-color: #f5f5f5;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 800px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  margin: 80px 0 20px; /* Ensure space from header */
+  border-radius: 8px;
+}
+
+/* Center Column Adjustments for Medium to Large Screens */
+@media (min-width: 768px) {
+  .center-column {
+    padding: 40px;
+    width: 60%;
+  }
+}
+
+/* Styling for Buttons on Small Screens */
+@media (max-width: 768px) {
+  #info-danger {
+    width: 76px;
+    height: 38px;
+    font-size: 9px;
+    padding: 5px 10px;
+    text-align: center;
+    border-radius: 5px;
+    margin-bottom: 30px;
+  }
+}
+
+@media (orientation: landscape) and (max-width: 1080px) {
+  .center-column{
+  margin-top: 40px;
+  }
+}
+
+/* General Button Styling */
+.btn-info, .btn-danger {
+  width: 100px;
+  height: 50px;
+  font-size: 18px;
+  padding: 5px 10px;
+  text-align: center;
+  border-radius: 5px;
+  margin-bottom: 30px;
+}
+
+/* Notification Bar Styling */
+.notification-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  text-align: center;
+  padding: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* List Group Item Styling for Alignment */
+.list-group-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Responsive Adjustments for Small Screens */
+@media (max-width: 768px) {
+  .list-group-item {
+    flex-direction: row;
+    gap: 5px;
+  }
+}

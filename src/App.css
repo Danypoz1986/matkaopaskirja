@@ -1,0 +1,72 @@
+.container {
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.textField {
+  margin-bottom: 10px;
+  width: 100%; 
+}
+
+.button {
+  width: 100%;
+  margin-top: 10px; 
+}
+
+.alert {
+  margin-top: 10px;
+}
+
+.infoContainer {
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.addFavorite {
+  margin-bottom: 20px; 
+}
+
+.favoriteList {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.favoriteItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 0;
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 10px;
+  }
+
+  .form {
+    gap: 10px;
+  }
+
+  .button {
+    width: 100%;
+  }
+
+  .favoriteItem {
+    flex-direction: column; 
+    align-items: flex-start; 
+  }
+
+  .favoriteItem button {
+    width: 100%; 
+    margin-top: 5px; 
+  }
+}
