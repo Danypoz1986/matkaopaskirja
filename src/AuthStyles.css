@@ -26,7 +26,8 @@
     justify-content: center;
     align-items: flex-start; /* Align the container at the top */
     height: calc(100vh-80px); /* Adjust height to account for the header */
-    overflow: auto; /* Enable scrolling if needed */
+    overflow: hidden!important; 
+    height: 100%;
     background-color: #f0f0f0;
     padding-top: 20px; /* Add some padding above the content */
     box-sizing: border-box;
@@ -59,6 +60,7 @@
 @media (max-width: 768px) {
     .auth-page {
         overflow: hidden !important; /* Prevent scrolling in portrait mode */
+        height: auto!important;
     }
 
     #register, #login {
