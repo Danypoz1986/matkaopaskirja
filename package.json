@@ -13,6 +13,8 @@
     "bcryptjs": "^2.4.3",
     "bootstrap": "^5.3.3",
     "cors": "^2.8.5",
+    "dotenv": "^16.1.4",
+    "express": "^4.18.2",
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.7.0",
     "react": "^18.3.1",
@@ -24,7 +26,7 @@
   },
   "scripts": {
     "start": "concurrently \"npm run server\" \"npm run client\"",
-    "server": "nodemon server.js",
+    "server": "node server.js",
     "client": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -48,14 +50,12 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "http://localhost:5000",
-  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
-  "main": "index.js",
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "engines": {
+    "node": "16.x",
+    "npm": "8.x"
+  },
   "devDependencies": {
-    "concurrently": "^9.1.0",
-    "nodemon": "^3.1.7"
+    "concurrently": "^9.1.0"
   }
 }
+
