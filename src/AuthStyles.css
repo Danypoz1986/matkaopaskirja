@@ -26,7 +26,7 @@
     justify-content: center;
     align-items: flex-start; /* Align the container at the top */
     height: calc(100vh-80px); /* Adjust height to account for the header */
-    overflow: hidden!important; 
+    overflow: hidden; 
     height: 100%;
     background-color: #f0f0f0;
     padding-top: 20px; /* Add some padding above the content */
@@ -88,7 +88,7 @@
         padding-top: calc(20px + 4px + 20px);
         padding-bottom: 40px; /* Keep consistent spacing at the bottom of the page */
         height: auto!important;
-        overflow: auto!important;
+        overflow: scroll!important;
     }
 
     .auth-container {
