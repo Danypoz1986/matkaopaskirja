@@ -73,7 +73,7 @@
 }
 
 /* Landscape mode adjustments */
-@media (orientation: landscape) and (max-width: 1080px) {
+@media (orientation: landscape) and (max-width: 1200px) {
     body, html {
         overflow: auto !important; /* Enable scrolling in landscape mode */
     }
@@ -93,7 +93,7 @@
 
     .auth-container {
         margin-bottom: 80px; /* Add space at the bottom of the container */
-        overflow: scroll;
+        overflow: scroll!important;
     }
 
     #register, #login {
