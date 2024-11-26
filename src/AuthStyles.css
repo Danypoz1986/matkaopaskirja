@@ -33,6 +33,20 @@
     box-sizing: border-box;
 }
 
+@media (orientation: landscape) and (max-width: 1080px){
+    .auth-page {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start; /* Align the container at the top */
+        height: calc(100vh-80px); /* Adjust height to account for the header */
+        height: 100%!important;
+        overflow: auto!important;
+        background-color: #f0f0f0;
+        padding-top: 20px; /* Add some padding above the content */
+        box-sizing: border-box;
+    }
+}
+
 .auth-container {
     display: flex;
     flex-direction: column; /* Stack children vertically */
