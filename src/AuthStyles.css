@@ -80,6 +80,7 @@
 
     .header {
         position: relative !important;
+        padding: 20px;
         margin-bottom: 0px;
         padding-bottom: 0px;
     }
