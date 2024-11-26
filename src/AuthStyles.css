@@ -60,7 +60,6 @@
 @media (max-width: 768px) {
     .auth-page {
         overflow: hidden !important; /* Prevent scrolling in portrait mode */
-        height: auto!important;
     }
 
     #register, #login {
@@ -88,6 +87,8 @@
     .auth-page {
         padding-top: calc(20px + 4px + 20px);
         padding-bottom: 40px; /* Keep consistent spacing at the bottom of the page */
+        height: auto!important;
+        overflow: auto!important;
     }
 
     .auth-container {
