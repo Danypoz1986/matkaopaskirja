@@ -87,6 +87,8 @@
     .auth-page {
         padding-top: calc(20px + 4px + 20px);
         padding-bottom: 40px; /* Keep consistent spacing at the bottom of the page */
+        height: 200%!important;
+        overflow: auto!important;
     }
 
     .auth-container {
