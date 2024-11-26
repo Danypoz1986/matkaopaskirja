@@ -1,7 +1,6 @@
 #auth-body {
     margin: 0;
     padding: 0;
-    overflow: hidden !important; /* Prevent body scroll by default */
     height: 100%;
     width: 100%;
     background-color: #f0f0f0;
