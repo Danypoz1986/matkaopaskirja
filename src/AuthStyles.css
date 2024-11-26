@@ -25,8 +25,9 @@
     display: flex;
     justify-content: center;
     align-items: flex-start; /* Align the container at the top */
-    height: calc(100vh-80px)!important; /* Adjust height to account for the header */
-    overflow: hidden; 
+    height: calc(100vh-80px); /* Adjust height to account for the header */
+    overflow: auto; /* Enable scrolling if needed */
+    height: 100%;
     background-color: #f0f0f0;
     padding-top: 20px; /* Add some padding above the content */
     box-sizing: border-box;
@@ -72,7 +73,7 @@
 }
 
 /* Landscape mode adjustments */
-@media (orientation: landscape) and (max-width: 1200px) {
+@media (orientation: landscape) and (max-width: 1080px) {
     body, html {
         overflow: auto !important; /* Enable scrolling in landscape mode */
     }
@@ -86,13 +87,10 @@
     .auth-page {
         padding-top: calc(20px + 4px + 20px);
         padding-bottom: 40px; /* Keep consistent spacing at the bottom of the page */
-        height: 200%!important;
-        overflow: auto!important;
     }
 
     .auth-container {
         margin-bottom: 80px; /* Add space at the bottom of the container */
-        overflow: scroll!important;
     }
 
     #register, #login {
